@@ -1,3 +1,5 @@
+using PlayerMove.Abstracts.Inputs;
+using PlayerMove.Abstracts.Movers;
 using PlayerMove.Inputs;
 using PlayerMove.Movements;
 using System.Collections;
@@ -11,8 +13,8 @@ namespace PlayerMove.Controllers
 
         [SerializeField] float _movementSpeed;
 
-        TouchInput _touchInput;
-        Movement _movement;
+        IInput _touchInput;
+        IMover _movement;
 
         // Start is called before the first frame update
         void Start()

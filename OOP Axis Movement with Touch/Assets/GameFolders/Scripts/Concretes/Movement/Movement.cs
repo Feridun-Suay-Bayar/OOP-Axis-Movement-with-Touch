@@ -1,13 +1,18 @@
+using PlayerMove.Abstracts.Movers;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace PlayerMove.Movements
 {
-    public class Movement : MonoBehaviour
+    public class Movement : MonoBehaviour, IMover
     {
         Vector2 _direction;
         Transform _transform;
+
+        public Vector2 Direction => _direction;
+
+        public Transform Transform => _transform;
         public Movement(Transform transform)
         {
             _transform = transform;

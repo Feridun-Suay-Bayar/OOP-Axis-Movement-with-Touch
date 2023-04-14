@@ -1,14 +1,15 @@
+using PlayerMove.Abstracts.Inputs;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace PlayerMove.Inputs
 {
-    public class TouchInput : MonoBehaviour
+    public class TouchInput : MonoBehaviour, IInput
     {
-        private Vector2 _direction;
 
-        public Vector2 Direction => _direction;
+        private Vector2 _direction;
+        public Vector2 Direction => _direction; //Interface
 
         Vector2 _beginingPosition;
         Vector2 _endPosition;
