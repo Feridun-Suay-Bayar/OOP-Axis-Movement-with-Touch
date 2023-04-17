@@ -24,7 +24,7 @@ namespace PlayerMove.Movements
             _direction.y = 0;
             _transform.position = ClampVector3(_transform.position);
             _transform.Translate(_direction * Time.deltaTime * speed,0);
-            
+    
         }
         public Vector3 ClampVector3(Vector3 transform)
         {

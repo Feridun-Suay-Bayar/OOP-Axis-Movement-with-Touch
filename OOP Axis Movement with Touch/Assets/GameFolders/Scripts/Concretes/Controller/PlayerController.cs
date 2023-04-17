@@ -19,7 +19,7 @@ namespace PlayerMove.Controllers
         // Start is called before the first frame update
         void Start()
         {
-            _touchInput = GetComponent<TouchInput>();
+            _touchInput = GetComponent<IInput>();
             _movement = new Movement(transform);
         }
 
